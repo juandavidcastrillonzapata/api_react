@@ -1,16 +1,102 @@
-# React + Vite
+# Todo App - Gestión de Tareas con React
+https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
+https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para gestión de tareas construida con React, React Router v6 y consumo de API REST. Este proyecto implementa todas las funcionalidades requeridas para la actividad GA1-220501096-03-AA1-EV10.
 
-Currently, two official plugins are available:
+-Características Principales
+-Funcionalidades Implementadas
+-Navegación entre páginas con React Router v6
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-Crear nuevas tareas con formularios controlados
 
-## React Compiler
+-Listar tareas existentes desde JSONPlaceholder API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-Marcar como completado/pendiente en tiempo real
 
-## Expanding the ESLint configuration
+-Eliminar tareas con confirmación
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-Validación básica de formularios (campos requeridos, longitud mínima)
+
+-Estados de carga con spinner animado
+
+-Manejo básico de errores con try/catch
+
+-Persistencia local con localStorage
+
+-Reto (Placeholders Implementados)
+-Editar tareas (botón implementado, funcionalidad pendiente)
+
+-Filtros por estado (sección de estadísticas implementada)
+
+# Estructura del Proyecto
+
+todo-app/
+├── src/
+│   ├── components/
+│   │   ├── Layout/
+│   │   │   └── Navbar.jsx          # Barra de navegación con enlaces activos
+│   │   ├── Todos/
+│   │   │   ├── TodoList.jsx        # Lista completa de tareas
+│   │   │   ├── TodoForm.jsx        # Formulario para crear nuevas tareas
+│   │   │   └── TodoItem.jsx        # Componente individual de tarea (con ✏️ placeholder)
+│   │   └── Shared/
+│   │       ├── LoadingSpinner.jsx  # Indicador de carga animado
+│   │       └── ErrorMessage.jsx    # Componente para mostrar errores
+│   ├── pages/
+│   │   ├── Home.jsx                # Página de inicio (/) - Presentación
+│   │   ├── TodosPage.jsx           # Página de tareas (/todos) - CRUD completo
+│   │   └── RegisterPage.jsx        # Página de registro (/registro) - Formulario
+│   ├── services/
+│   │   └── api.js                  # Servicios para API y localStorage
+│   ├── App.jsx                     # Configuración de rutas principal
+│   └── main.jsx                    # Punto de entrada de la aplicación
+├── package.json                    # Dependencias y scripts
+└── README.md                       # Esta documentación
+
+# Tecnologías Utilizadas
+
+| Tecnología | Versión | Uso |
+|------------|---------|-----|
+| **React** | 18.x | Biblioteca principal para la UI |
+| **React Router DOM** | 6.x | Navegación entre páginas |
+| **Axios** | 1.x | Peticiones HTTP a APIs REST |
+| **Vite** | 4.x | Bundler y entorno de desarrollo |
+| **JSONPlaceholder API** | - | API REST para datos de prueba |
+| **LocalStorage** | - | Persistencia de datos en navegador |
+| **CSS Modules** | - | Estilos modularizados |
+
+# Instalación y Ejecución
+
+## 1. Clonar el repositorio
+
+git clone https://github.com/tu-usuario/todo-app.git
+cd todo-app
+
+## 2. Instalar dependencias
+
+npm install
+
+## 3. Ejecutar en modo desarrollo
+
+npm run dev
+
+## 4. Construir para producción
+
+npm run build
+
+## 5. Previsualizar build de producción
+
+npm run preview
+
+# Capturas de Pantalla
+
+## Página de Inicio
+https://via.placeholder.com/800x400/4A90E2/FFFFFF?text=P%25C3%25A1gina+de+Inicio
+
+## Gestión de Tareas
+https://via.placeholder.com/800x400/50E3C2/FFFFFF?text=Gesti%25C3%25B3n+de+Tareas
+
+## Formulario de Registro
+https://via.placeholder.com/800x400/9013FE/FFFFFF?text=Formulario+de+Registro
