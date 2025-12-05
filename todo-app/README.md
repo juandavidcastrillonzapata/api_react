@@ -90,13 +90,3 @@ npm run build
 
 npm run preview
 
-# Capturas de Pantalla
-
-## Página de Inicio
-https://via.placeholder.com/800x400/4A90E2/FFFFFF?text=P%25C3%25A1gina+de+Inicio
-
-## Gestión de Tareas
-https://via.placeholder.com/800x400/50E3C2/FFFFFF?text=Gesti%25C3%25B3n+de+Tareas
-
-## Formulario de Registro
-https://via.placeholder.com/800x400/9013FE/FFFFFF?text=Formulario+de+Registro
