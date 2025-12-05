@@ -1,8 +1,4 @@
 # Todo App - Gestión de Tareas con React
-https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
-https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white
-
 Aplicación web para gestión de tareas construida con React, React Router v6 y consumo de API REST. Este proyecto implementa todas las funcionalidades requeridas para la actividad GA1-220501096-03-AA1-EV10.
 
 -Características Principales
